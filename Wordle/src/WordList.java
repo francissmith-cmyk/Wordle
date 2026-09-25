@@ -2236,6 +2236,7 @@ public class WordList {
 	"saith",
 	"salad",
 	"sales",
+	"salet",
 	"sally",
 	"salon",
 	"salsa",
