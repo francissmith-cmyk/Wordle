@@ -651,6 +651,7 @@ public class WordList {
 	"crumb",
 	"crush",
 	"crust",
+	"crwth",
 	"crypt",
 	"cubes",
 	"cubic",
@@ -1988,6 +1989,8 @@ public class WordList {
 	"polls",
 	"ponds",
 	"pools",
+	"poops",
+	"poopy",
 	"popes",
 	"poppa",
 	"poppy",
@@ -2006,6 +2009,7 @@ public class WordList {
 	"power",
 	"prank",
 	"prate",
+	"prawn",
 	"prays",
 	"press",
 	"preys",
@@ -2082,6 +2086,7 @@ public class WordList {
 	"racer",
 	"races",
 	"racks",
+	"radar",
 	"radii",
 	"radio",
 	"rafts",
@@ -3108,7 +3113,6 @@ public class WordList {
 	"zoner",
 	"zones",
 	};
-
 	public static String random() 
 	{
 		int number = (int)(Math.random()*list.length);
