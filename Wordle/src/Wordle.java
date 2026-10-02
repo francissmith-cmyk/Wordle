@@ -33,6 +33,10 @@ public class Wordle {
                 System.out.println("The word is " + word + ", you filthy cheater.");
                 isCheated = true;
             } 
+            if (guess.equals("a valid 5-letter word")||guess.equals("a valid 5-lette word."))
+            {
+            	System.out.println("You're not funny.");
+            }
             else if (!WordList.isWord(guess)) 
             {
                 System.out.println("Your word must be a valid 5-letter word.");
