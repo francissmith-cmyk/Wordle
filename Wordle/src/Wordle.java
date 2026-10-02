@@ -71,7 +71,7 @@ public class Wordle {
                 }
             } else 
             {
-                grid[turn][i] = " {" + currentLetter + "} ";
+                grid[turn][i] = "{" + currentLetter + "}";
                 if (!incorrect.contains(currentLetter)) 
                 {
                     incorrect.add(currentLetter);
@@ -123,14 +123,15 @@ public class Wordle {
             if (totalGuesses != 1) 
             {
                 System.out.println("You guessed the word " + word + " correctly in " + totalGuesses + " guesses!");
-            } else 
+            } 
+            else 
             {
                 System.out.println("You guessed the word " + word + " correctly in 1 guess! Amazing!");
             }
         } 
         else 
         {
-            System.out.println("You won, but it doesn't count because you cheated. Shameful.");
+            System.out.println("You won, but it doesn't count because you cheated. Shameful."); 
         }
     }
     public static void gameLost() 
