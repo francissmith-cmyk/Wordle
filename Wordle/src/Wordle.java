@@ -11,6 +11,10 @@ public class Wordle {
     static ArrayList<String> incorrect = new ArrayList<String>();
     static ArrayList<String> correct = new ArrayList<String>();
     static Scanner userStringInput = new Scanner(System.in);
+    public static final String RESET = "\u001B[0m"; 
+    public static final String GREEN = "\u001B[32m";
+    public static final String YELLOW = "\u001B[33m";
+    public static final String RED = "\u001B[31m";
     public static void main(String[] args) 
     {
         playing = true;
@@ -61,7 +65,7 @@ public class Wordle {
             String targetLetter = word.substring(i, i + 1);
             if (currentLetter.equals(targetLetter)) 
             {
-                grid[turn][i] = "[" + currentLetter.toUpperCase() + "]";
+                grid[turn][i] = GREEN + "[" + currentLetter.toUpperCase() + "]" + RESET;
                 if (!correct.contains(currentLetter)) 
                 {
                     correct.add(currentLetter);
@@ -69,14 +73,15 @@ public class Wordle {
             } 
             else if (word.contains(currentLetter)) 
             {
-                grid[turn][i] = "(" + currentLetter + ")";
+                grid[turn][i] = YELLOW + "(" + currentLetter + ")" + RESET;
                 if (!correct.contains(currentLetter)) 
                 {
                     correct.add(currentLetter);
                 }
-            } else 
+            } 
+            else 
             {
-                grid[turn][i] = "{" + currentLetter + "}";
+                grid[turn][i] = RED + "{" + currentLetter + "}" + RESET;
                 if (!incorrect.contains(currentLetter)) 
                 {
                     incorrect.add(currentLetter);
